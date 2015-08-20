@@ -6,8 +6,10 @@ cd vendor
 
 if [ -d dockerony ]; then
 	echo "Dockerony is already installed"
-	exit
+else
+	git clone git@github.com:greg0ire/dockerony.git
 fi
 
-git clone git@github.com:greg0ire/dockerony.git
+mkdir --parents ~/bin
 
+ln --symbolic --force ../vendor/dockerony/bin/* ~/bin/.

@@ -2,11 +2,13 @@ INSTALL_GIT=assets/install-git.sh
 INSTALL_DOCKER=assets/install-docker.sh
 INSTALL_DOCKER_COMPOSE=assets/install-docker-compose.sh
 INSTALL_DOCKERONY=assets/install-dockerony.sh
+INSTALL_DOCKERSHELL=assets/install-dockershell.sh
 
 all: install-git \
 	install-docker \
 	install-docker-compose \
-	install-dockerony
+	install-dockerony \
+	install-dockershell
 
 install-git:
 	$(INSTALL_GIT)
@@ -19,3 +21,6 @@ install-docker-compose:
 
 install-dockerony:
 	$(INSTALL_DOCKERONY)
+
+install-dockershell:
+	$(INSTALL_DOCKERSHELL)

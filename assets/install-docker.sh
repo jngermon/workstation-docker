@@ -14,3 +14,5 @@ if ! [ $(which curl) ]; then
 fi
 
 curl -sSL https://get.docker.com/ | sh
+
+sudo systemctl enable docker

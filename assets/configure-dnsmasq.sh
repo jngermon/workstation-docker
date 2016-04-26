@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DNSMASQ_DOCKER_FILE=" /etc/NetworkManager/dnsmasq.d/docker"
-DNSMASQ_DOCKER_CONFIGURATION="server=/docker/172.17.42.1"
+DNSMASQ_DOCKER_CONFIGURATION="server=/docker/172.17.0.1"
 
 if [ -f $DNSMASQ_DOCKER_FILE ]; then
 	echo "Dnsmasq seems to be already configure to use DNSDock"

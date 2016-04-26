@@ -15,10 +15,16 @@ sudo vim /etc/apt/sources.list.d/docker.list
 
 sudo apt-get update
 
-sudo apt-get purge lxc-docker*
+sudo apt-get install apt-transport-https ca-certificates
+
+sudo apt-get purge lxc-docker
 
 sudo apt-get install linux-image-extra-$(uname -r)
 
 sudo apt-get install docker-engine
 
 sudo systemctl enable docker
+
+sudo groupadd docker
+
+sudo usermod -aG docker $(whoami)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_COMPOSE_VERSION_NUM="1.7.0"
+DOCKER_COMPOSE_VERSION_NUM="1.8.0"
 
 if ! [ $(which curl) ]; then
 	echo "Curl is not install"

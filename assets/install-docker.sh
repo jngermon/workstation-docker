@@ -7,6 +7,12 @@ if [ $(which docker) ]; then
 	exit
 fi
 
+if ! [ $(which curl) ]; then
+	echo "Curl is not install"
+	sudo apt-get update
+	sudo apt-get install curl
+fi
+
 curl https://get.docker.com > install-docker.sh
 chmod 755 install-docker.sh
 ./install-docker.sh

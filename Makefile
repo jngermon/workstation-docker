@@ -9,7 +9,6 @@ all: install-git \
 	install-docker \
 	install-docker-compose \
 	install-dockerony \
-	install-dockershell \
 	configure-dnsmasq
 
 install-git:
@@ -23,9 +22,6 @@ install-docker-compose:
 
 install-dockerony:
 	$(INSTALL_DOCKERONY)
-
-install-dockershell:
-	$(INSTALL_DOCKERSHELL)
 
 configure-dnsmasq:
 	$(CONFIGURE_DNSMASQ)
